@@ -1,46 +1,12 @@
-// const http=require("http");
-// const express =require("express");
-// const cors = require("cors");
-// const socketIO = require("socket.io");
-
-// const app=express();
-// const port= 4500 || process.env.PORT ;
-// // const users=[{}];
-
-
-// // app.use(cors());
-// app.get("/",(req,res)=>{
-//     res.send("HELL ITS WORKING");
-// })
-
-// const server=http.createServer(app);
-
-// const io=socketIO(server);
-
-// io.on("connection",(socket)=>{
-//     console.log("New Connection");
-//     socket.on('joined',({user})=>{
-//         console.log(`${user} has joined`)
-//         users[socket.id]=user;
-//     })
-
-// });
-
-// server.listen(port,()=>{
-//     console.log(`Server is Working on http://localhost:${port}`);
-// })
-
-
-
-// ===================================================
 const http=require("http");
 const express =require("express");
 const cors = require("cors");
 const socketIO = require("socket.io");
 
 const app=express();
-// const port= process.env.PORT ;
-const port= 4500 || process.env.PORT ;
+require("dotenv").config();
+
+const port = process.env.BASE_URL ;
 
 
 const users=[{}];

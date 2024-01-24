@@ -23,15 +23,3 @@ const Message = ({ user, message, classs }) => {
 
 export default Message
 
-
-// import React from 'react'
-
-// function Message() {
-//   return (
-//     <div>
-//       <h1> Msg </h1>
-//     </div>
-//   )
-// }
-
-// export default Message
